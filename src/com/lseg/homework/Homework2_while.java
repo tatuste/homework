@@ -1,15 +1,16 @@
 package com.lseg.homework;
 
-import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Homework2_while {
     public static void main(String[] args) {
-       //ghicesteNumar(6);
-       //sumaNumere();
-       //laturiTriunghi();
-       //palindrom();
+       ghicesteNumar(6);
+       sumaNumere();
+       laturiTriunghi();
+       palindrom();
        bancomat(1234);
+       guessNumber();
     }
 
     //Exercitiu 1 si 2
@@ -65,7 +66,7 @@ public class Homework2_while {
         System.out.println("Introduceti numarul: ");
         int numarDeVerificat = scanner.nextInt();
         int numarInversat = 0;
-        int restImpartire = 0;
+        int restImpartire;
         int variabilaLocala = numarDeVerificat;
         while (variabilaLocala != 0) {
             restImpartire = variabilaLocala % 10;
@@ -98,6 +99,24 @@ public class Homework2_while {
             }
         }
 
+    }
+
+    //Exercitiu 6
+    public static void guessNumber(){
+        System.out.println("Ghiciti un numar de la 1 la 100.");
+        Random random = new Random();
+        int numarRandom= random.nextInt(100);
+        Scanner scanner  = new Scanner(System.in);
+        System.out.println("Introduceti numarul: ");
+        int numarIntrodus = scanner.nextInt();
+        while(numarIntrodus != numarRandom) {
+            if (numarIntrodus > numarRandom) {
+                System.out.println("Numarul cautat este mai mic!");
+            } else System.out.println("Numarul cautat este mai mare!");
+            System.out.println("Introduceti numarul: ");
+            numarIntrodus = scanner.nextInt();
+        }
+        System.out.println("Felicitari! Ati ghicit numarul!");
     }
 
 }
