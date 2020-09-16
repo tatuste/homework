@@ -1,4 +1,4 @@
-package com.lseg.homework;
+package com.lseg.homework.homework2;
 
 public class Homework2_switch {
     public static void main(String[] args){

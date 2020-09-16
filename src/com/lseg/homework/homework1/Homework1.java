@@ -1,23 +1,8 @@
-package com.lseg.homework;
+package com.lseg.homework.homework1;
 
 
-public class homework1 {
+public class Homework1 {
     public static void main(String[] args){
-        int[] sampleArray = new int[]{1,2,3,4,5,6,7,8};
-        int numOfRotations = 4;
-        for(int i = 0; i < numOfRotations; i++){
-            int firstElement = sampleArray[0];
-            for(int j = 0; j < sampleArray.length-1; j++){
-                sampleArray[j] = sampleArray[j+1];
-            }
-            sampleArray[sampleArray.length-1]=firstElement;
-        }
-
-        for(int k = 0; k <= sampleArray.length-1; k++){
-            System.out.println(sampleArray[k]);
-        }
-
-        System.out.println("--------------");
 
         int[] rotatedArray = rotLeft((new int[]{1,2,3,4,5,6,7,8,9}), 5);
         for(int k = 0; k <= rotatedArray.length-1; k++){

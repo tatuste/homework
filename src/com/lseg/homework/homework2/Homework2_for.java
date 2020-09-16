@@ -1,4 +1,4 @@
-package com.lseg.homework;
+package com.lseg.homework.homework2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -9,7 +9,7 @@ public class Homework3 {
     }
 
     //Exercitiu 1
-    static double covertToKilometersPerHour(double milesPerHour) {
+    public static double covertToKilometersPerHour(double milesPerHour) {
         double mileToKm = 1.609344;
         double kmPerHour;
         kmPerHour = milesPerHour * mileToKm;
@@ -17,7 +17,7 @@ public class Homework3 {
     }
 
     //Exercitiu 2
-    static boolean shouldWakeUp(boolean barking, int hour) {
+    public static boolean shouldWakeUp(boolean barking, int hour) {
         if (hour < 0 || hour > 23) {
             System.out.println("Nu ati introdus o ora corecta!");
             return false;
@@ -30,7 +30,7 @@ public class Homework3 {
     }
 
     //Exercitiu 3
-    static boolean isLeapYear(int year) {
+    public static boolean isLeapYear(int year) {
         if (year < 1 || year > 9999) return false;
         if (year % 4 == 0) {
             if (year % 100 == 0) {
@@ -42,7 +42,7 @@ public class Homework3 {
     }
 
     //Exercitiu 4
-    static boolean isCatPlaying(boolean summer, int temperature) {
+    public static boolean isCatPlaying(boolean summer, int temperature) {
         if (summer) {
             if (temperature >= 25 && temperature <= 45)return true;
             else return false;
