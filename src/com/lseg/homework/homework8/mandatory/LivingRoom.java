@@ -1,4 +1,4 @@
-package com.lseg.homework.homework8;
+package com.lseg.homework.homework8.mandatory;
 
 public class LivingRoom {
     private Wall wall1;
@@ -26,8 +26,11 @@ public class LivingRoom {
         this.remoteController = remoteController;
         this.bookCase = bookCase;
     }
-    public void watchTV(String command){
-        remoteController.pressButton(command);
+
+    public void watchTV() {
+        remoteController.pressButton("Start");
+        remoteController.pressButton("Volume+");
+        remoteController.pressButton("Channel+");
     }
 
     public Wall getWall1() {
