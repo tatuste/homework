@@ -43,11 +43,13 @@ public class Homework2_for {
 
     public static void exercitiu2(int n) {
         for (int i = 0; i <= n; i++) {
-            int[] sampleArray = new int[n+1];
+            int[] sampleArray = new int[n + 1];
             for (int j = 0; j <= sampleArray.length - 1; j++) {
                 if (j == i) {
                     sampleArray[j] = 1;
-                } else sampleArray[j] = 0;
+                } else {
+                    sampleArray[j] = 0;
+                }
                 System.out.print(sampleArray[j] + " ");
             }
             System.out.println();
@@ -56,11 +58,13 @@ public class Homework2_for {
 
     public static void exercitiu3(int n) {
         for (int i = 0; i <= n; i++) {
-            int[] sampleArray = new int[n+1];
+            int[] sampleArray = new int[n + 1];
             for (int j = 0; j <= sampleArray.length - 1; j++) {
                 if (j == i + 1) {
                     sampleArray[j] = 1;
-                } else sampleArray[j] = 0;
+                } else {
+                    sampleArray[j] = 0;
+                }
                 System.out.print(sampleArray[j] + " ");
             }
             System.out.println();
@@ -69,11 +73,13 @@ public class Homework2_for {
 
     public static void exercitiu4(int n) {
         for (int i = 0; i <= n; i++) {
-            int[] sampleArray = new int[n+1];
+            int[] sampleArray = new int[n + 1];
             for (int j = 0; j <= sampleArray.length - 1; j++) {
                 if (j == sampleArray.length - 1 - i) {
                     sampleArray[j] = 1;
-                } else sampleArray[j] = 0;
+                } else {
+                    sampleArray[j] = 0;
+                }
                 System.out.print(sampleArray[j] + " ");
             }
             System.out.println();
@@ -82,7 +88,7 @@ public class Homework2_for {
 
     public static void exercitiu5(int n) {
         for (int i = 0; i <= n; i++) {
-            int[] sampleArray = new int[n+1];
+            int[] sampleArray = new int[n + 1];
             for (int j = sampleArray.length - 1 - i; j <= sampleArray.length - 1; j++) {
                 sampleArray[j] = i;
                 System.out.print(sampleArray[j]);
@@ -93,7 +99,7 @@ public class Homework2_for {
 
     public static void exercitiu6(int n) {
         for (int i = 1; i <= n; i++) {
-            int[] sampleArray = new int[n+1];
+            int[] sampleArray = new int[n + 1];
             for (int j = i; j <= sampleArray.length - 1; j++) {
                 sampleArray[j] = i;
                 System.out.print(sampleArray[j]);

@@ -8,7 +8,9 @@ public class Cuboid extends Rectangle {
         super(width, length);
         if (height < 0) {
             this.height = 0;
-        } else this.height = height;
+        } else {
+            this.height = height;
+        }
     }
 
     public double getHeight() {

@@ -5,11 +5,11 @@ public class Point {
     private int x;
     private int y;
 
-    public Point(){
+    public Point() {
 
     }
 
-    public Point(int x, int y){
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -30,15 +30,15 @@ public class Point {
         this.y = y;
     }
 
-    public double distance(){
+    public double distance() {
         double distance;
-        distance = Math.sqrt(x*x + y*y);
+        distance = Math.sqrt(x * x + y * y);
         return distance;
     }
 
-    public double distance(Point another){
+    public double distance(Point another) {
         double distance;
-        distance = Math.sqrt((another.x - this.x)*(another.x - this.x) + (another.y - y)*(another.y - y));
+        distance = Math.sqrt((another.x - this.x) * (another.x - this.x) + (another.y - y) * (another.y - y));
         return distance;
     }
 }

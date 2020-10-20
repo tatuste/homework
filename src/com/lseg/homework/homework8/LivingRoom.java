@@ -26,7 +26,8 @@ public class LivingRoom {
         this.remoteController = remoteController;
         this.bookCase = bookCase;
     }
-    public void watchTV(String command){
+
+    public void watchTV(String command) {
         remoteController.pressButton(command);
     }
 

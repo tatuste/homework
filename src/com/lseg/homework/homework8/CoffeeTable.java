@@ -1,6 +1,6 @@
 package com.lseg.homework.homework8;
 
-public class CoffeeTable extends Furniture{
+public class CoffeeTable extends Furniture {
 
     private int noOfLegs;
 

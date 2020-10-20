@@ -1,6 +1,6 @@
 package com.lseg.homework.homework8;
 
-public class BookCase extends Furniture{
+public class BookCase extends Furniture {
 
     private int noOfShelves;
 

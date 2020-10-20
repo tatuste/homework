@@ -23,6 +23,5 @@ public class Homework7 {
         skoda.moves();
 
 
-
     }
 }

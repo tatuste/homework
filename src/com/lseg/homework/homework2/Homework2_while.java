@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Homework2_while {
     public static void main(String[] args) {
-       ghicesteNumar(6);
-       sumaNumere();
-       laturiTriunghi();
-       palindrom();
-       bancomat(1234);
-       guessNumber();
+        ghicesteNumar(6);
+        sumaNumere();
+        laturiTriunghi();
+        palindrom();
+        bancomat(1234);
+        guessNumber();
     }
 
     //Exercitiu 1 si 2
@@ -20,11 +20,14 @@ public class Homework2_while {
         System.out.println("Introduceti numarul: ");
         int numarCititDeLaTastatura = scanner.nextInt();
         int numarIncercari = 1;
-        while(numarCititDeLaTastatura != numarCorect) {
+
+        while (numarCititDeLaTastatura != numarCorect) {
             numarIncercari++;
             if (numarCititDeLaTastatura > numarCorect) {
                 System.out.println("Numarul cautat este mai mic!");
-            } else System.out.println("Numarul cautat este mai mare!");
+            } else {
+                System.out.println("Numarul cautat este mai mare!");
+            }
             System.out.println("Introduceti numarul: ");
             numarCititDeLaTastatura = scanner.nextInt();
         }
@@ -38,6 +41,7 @@ public class Homework2_while {
         System.out.println("Introduceti un numar: ");
         int suma = 0;
         int numarIntrodus = scanner.nextInt();
+
         while (numarIntrodus != 0) {
             suma = suma + numarIntrodus;
             System.out.println("Suma numerelor este: " + suma);
@@ -57,7 +61,9 @@ public class Homework2_while {
         int latura3 = scanner.nextInt();
         if ((latura1 + latura2) > latura3 && (latura2 + latura3) > latura1 && (latura1 + latura3) > latura2) {
             System.out.println("Cele 3 numere pot fi laturile unui triunghi!");
-        } else System.out.println("Cele 3 numere nu pot fi laturile unui triunghi!");
+        } else {
+            System.out.println("Cele 3 numere nu pot fi laturile unui triunghi!");
+        }
     }
 
     //Exercitiu 5
@@ -68,6 +74,7 @@ public class Homework2_while {
         int numarInversat = 0;
         int restImpartire;
         int variabilaLocala = numarDeVerificat;
+
         while (variabilaLocala != 0) {
             restImpartire = variabilaLocala % 10;
             numarInversat = numarInversat * 10 + restImpartire;
@@ -75,7 +82,9 @@ public class Homework2_while {
         }
         if (numarDeVerificat == numarInversat) {
             System.out.println("Numarul este palindrom.");
-        } else System.out.println("Numarul nu este palindrom");
+        } else {
+            System.out.println("Numarul nu este palindrom");
+        }
     }
 
     //Exercitiu 7
@@ -85,6 +94,7 @@ public class Homework2_while {
         System.out.println("Introduceti PIN");
         int pinIntrodus = scanner.nextInt();
         int numarIncercari = 0;
+
         while (numarIncercari < 3) {
             numarIncercari++;
             if (pinCorect == pinIntrodus) {
@@ -102,17 +112,20 @@ public class Homework2_while {
     }
 
     //Exercitiu 6
-    public static void guessNumber(){
+    public static void guessNumber() {
         System.out.println("Ghiciti un numar de la 1 la 100.");
         Random random = new Random();
-        int numarRandom= random.nextInt(100);
-        Scanner scanner  = new Scanner(System.in);
+        int numarRandom = random.nextInt(100);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Introduceti numarul: ");
         int numarIntrodus = scanner.nextInt();
-        while(numarIntrodus != numarRandom) {
+
+        while (numarIntrodus != numarRandom) {
             if (numarIntrodus > numarRandom) {
                 System.out.println("Numarul cautat este mai mic!");
-            } else System.out.println("Numarul cautat este mai mare!");
+            } else {
+                System.out.println("Numarul cautat este mai mare!");
+            }
             System.out.println("Introduceti numarul: ");
             numarIntrodus = scanner.nextInt();
         }

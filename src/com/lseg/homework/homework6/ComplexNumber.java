@@ -5,7 +5,7 @@ public class ComplexNumber {
     private double real;
     private double imaginary;
 
-    public ComplexNumber(double real, double imaginary){
+    public ComplexNumber(double real, double imaginary) {
         this.real = real;
         this.imaginary = imaginary;
     }
@@ -18,22 +18,22 @@ public class ComplexNumber {
         return imaginary;
     }
 
-    public void add(double real, double imaginary){
+    public void add(double real, double imaginary) {
         this.real += real;
         this.imaginary += imaginary;
     }
 
-    public void add(ComplexNumber number){
+    public void add(ComplexNumber number) {
         this.real += number.real;
         this.imaginary += number.imaginary;
     }
 
-    public void substract(double real, double imaginary){
+    public void substract(double real, double imaginary) {
         this.real -= real;
         this.imaginary -= real;
     }
 
-    public void substract(ComplexNumber number){
+    public void substract(ComplexNumber number) {
         this.real -= number.real;
         this.imaginary -= number.imaginary;
     }
