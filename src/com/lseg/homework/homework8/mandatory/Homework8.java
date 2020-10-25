@@ -23,7 +23,7 @@ public class Homework8 {
 
         LivingRoom living = new LivingRoom(wall1, wall2, wall3, wall4, floor, couch, coffeeTable, tvUnit, tv, remoteController, bookCase);
 
-        living.watchTV();
+        living.watchTV("Start");
     }
 }
 
