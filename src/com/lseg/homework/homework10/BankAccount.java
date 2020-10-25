@@ -1,15 +1,17 @@
 package com.lseg.homework.homework10;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BankAccount {
 
     private String iban;
     private double balance;
-    private List<Card> attachedCardNumbers;
+    private List<String> attachedCardNumbers;
 
     public BankAccount(String iban) {
         this.iban = iban;
+        attachedCardNumbers = new ArrayList<>();
     }
 
     public void addMoney(double amount) {
@@ -27,8 +29,8 @@ public class BankAccount {
         }
     }
 
-    public void attachCard(String cardNumber) {
-
+    public void attachCard(Card card) {
+        attachedCardNumbers.add(card.getCardNumber());
     }
 
     public String getIban() {
@@ -47,11 +49,20 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public List<Card> getAttachedCardNumbers() {
+    public List<String> getAttachedCardNumbers() {
         return attachedCardNumbers;
     }
 
-    public void setAttachedCardNumbers(List<Card> attachedCardNumbers) {
+    public void setAttachedCardNumbers(List<String> attachedCardNumbers) {
         this.attachedCardNumbers = attachedCardNumbers;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "iban='" + iban + '\'' +
+                ", balance=" + balance +
+                ", attachedCardNumbers=" + attachedCardNumbers +
+                '}';
     }
 }

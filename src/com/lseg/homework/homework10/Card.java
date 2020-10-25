@@ -1,7 +1,6 @@
 package com.lseg.homework.homework10;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class Card {
 
