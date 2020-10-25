@@ -1,4 +1,4 @@
-package com.lseg.homework.homework8;
+package com.lseg.homework.homework8.mandatory;
 
 public class RemoteController {
     private Dimension dimension;
@@ -28,6 +28,7 @@ public class RemoteController {
                 break;
             default:
                 System.out.println("BAD command");
+
         }
     }
 

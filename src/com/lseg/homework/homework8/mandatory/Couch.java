@@ -1,4 +1,4 @@
-package com.lseg.homework.homework8;
+package com.lseg.homework.homework8.mandatory;
 
 public class Couch extends Furniture {
 
