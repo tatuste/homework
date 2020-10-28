@@ -8,6 +8,7 @@ public class Card {
     private String ownerName;
     private String cardNumber;
 
+
     public Card(LocalDate expirationDate, String ownerName, String cardNumber) {
         this.expirationDate = expirationDate;
         this.ownerName = ownerName;

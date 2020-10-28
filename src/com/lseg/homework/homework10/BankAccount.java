@@ -9,10 +9,12 @@ public class BankAccount {
     private double balance;
     private List<String> attachedCardNumbers;
 
+
     public BankAccount(String iban) {
         this.iban = iban;
         attachedCardNumbers = new ArrayList<>();
     }
+
 
     public void addMoney(double amount) {
         this.balance += amount;

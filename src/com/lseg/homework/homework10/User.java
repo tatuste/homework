@@ -8,10 +8,12 @@ public class User {
     private List<Card> cards;
     private List<BankAccount> bankAccounts;
 
+
     public User() {
         cards = new ArrayList<>();
         bankAccounts = new ArrayList<>();
     }
+
 
     public void addCard(Card card) {
         cards.add(card);
