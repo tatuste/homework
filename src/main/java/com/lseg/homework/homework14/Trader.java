@@ -1,6 +1,12 @@
 package com.lseg.homework.homework14;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Data
+@Getter
+@Setter
 public class Trader {
 
     private String name;
@@ -12,7 +18,7 @@ public class Trader {
         this.city = city;
     }
 
-    public String getName() {
+   /* public String getName() {
         return name;
     }
 
@@ -26,8 +32,7 @@ public class Trader {
 
     public void setCity(String city) {
         this.city = city;
-    }
-
+    }*/
     @Override
     public String toString() {
         return "Trader{" +
